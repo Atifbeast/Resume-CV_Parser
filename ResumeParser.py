@@ -21,9 +21,9 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-model_word2vec = Word2Vec.load("C:\\Users\\ATIF SHAIK\\resumeparsing.model")
-model =  pkl.load(open("C:\\Users\\ATIF SHAIK\\ResumeModel.pkl", 'rb')) 
-encode =  pkl.load(open("C:\\Users\\ATIF SHAIK\\ResumeClasses.pkl", 'rb')) 
+model_word2vec = Word2Vec.load("resumeparsing.model")
+model =  pkl.load(open("ResumeModel.pkl", 'rb')) 
+encode =  pkl.load(open("ResumeClasses.pkl", 'rb')) 
 
 
 st.markdown(
@@ -151,7 +151,7 @@ if scan:
             for i in encode.classes_:
                 d.append(i)
 
-            with open("C:\\Users\\ATIF SHAIK\\linkedin_skill.txt", 'r', encoding='utf-8') as file:
+            with open("linkedin_skill.txt", 'r', encoding='utf-8') as file:
                 txt = file.read()
 
             txt = txt.split('\n')
