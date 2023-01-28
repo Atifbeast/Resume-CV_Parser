@@ -25,7 +25,7 @@ model_word2vec = Word2Vec.load("resumeparsing.model")
 model =  pkl.load(open("ResumeModel.pkl", 'rb')) 
 encode =  pkl.load(open("ResumeClasses.pkl", 'rb')) 
 
-
+   
 st.markdown(
     """
     <style>
